@@ -62,7 +62,7 @@ function App() {
     { name: 'PostgreSQL', image: '../icons/PostgreSQL-Light.svg' },
     { name: 'Express.js', image: '../icons/ExpressJS-Light.svg' },
     { name: 'PHP', image: '../icons/PHP-Light.svg' },
-    { name: 'MongoDB', image: '../icons/mongoDB.svg' },
+    { name: 'MongoDB', image: '../icons/MongoDB.svg' },
     { name: 'Linux', image: '../icons/Linux-Light.svg' },
     { name: 'Git', image: '../icons/Git.svg' },
     { name: 'Docker', image: '../icons/Docker.svg' },
@@ -87,57 +87,57 @@ function App() {
 
   const projects = [
     {
-      title: 'E-Commerce Platform',
-      description: 'A full-stack e-commerce solution with React, Node.js, and PostgreSQL featuring payment integration, inventory management, and admin dashboard.',
-      image: 'https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=600',
-      technologies: ['React', 'Node.js', 'PostgreSQL', 'Stripe'],
-      github: 'https://github.com',
-      live: 'https://demo.com',
-      hasLiveDemo: true
-    },
-    {
-      title: 'Task Management App',
-      description: 'A collaborative task management application with real-time updates, file sharing, and team collaboration features.',
-      image: 'https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=600',
-      technologies: ['React', 'Firebase', 'Material-UI'],
-      github: 'https://github.com',
+      title: 'Patient Care System',
+      description: 'Web platform revolutionizing patient care with digital records, automated scheduling, secure messaging, real-time notifications.',
+      image: '../images/wellbe.png',
+      technologies: ['PHP', 'MySQL', 'JavaScript', 'Html', 'CSS'],
+      github: 'https://github.com/himeshdharmawansha/WellBe',
       live: null,
       hasLiveDemo: false
     },
     {
-      title: 'Analytics Dashboard',
-      description: 'A comprehensive analytics dashboard with data visualization, reporting, and real-time metrics for business intelligence.',
-      image: 'https://images.pexels.com/photos/590020/pexels-photo-590020.jpg?auto=compress&cs=tinysrgb&w=600',
-      technologies: ['React', 'D3.js', 'Python', 'FastAPI'],
-      github: 'https://github.com',
-      live: 'https://demo.com',
-      hasLiveDemo: true
-    },
-    {
-      title: 'E-Commerce Platform',
-      description: 'A full-stack e-commerce solution with React, Node.js, and PostgreSQL featuring payment integration, inventory management, and admin dashboard.',
-      image: 'https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=600',
-      technologies: ['React', 'Node.js', 'PostgreSQL', 'Stripe'],
-      github: 'https://github.com',
-      live: 'https://demo.com',
-      hasLiveDemo: true
-    },
-    {
-      title: 'Task Management App',
-      description: 'A collaborative task management application with real-time updates, file sharing, and team collaboration features.',
-      image: 'https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=600',
-      technologies: ['React', 'Firebase', 'Material-UI'],
-      github: 'https://github.com',
+      title: 'Library Management System',
+      description: 'A library platform streamlining book borrowing, searching, and management with dynamic, user-friendly features.',
+      image: '../images/libo.png',
+      technologies: ['React', 'MongoDB', 'Node.js', 'Express.js'],
+      github: 'https://github.com/Benshekniel/RAD_LIBO.git',
       live: null,
       hasLiveDemo: false
     },
     {
-      title: 'Analytics Dashboard',
+      title: 'Smart Waste Bin Monitoring System',
+      description: 'A Smart Waste Bin Monitoring system using ESP32 and Arduino for real-time fill level and lid status tracking.',
+      image: '../images/SmartBin.webp',
+      technologies: ['ESP32', 'Arduino Uno', 'MQTT', 'Arduino IDE'],
+      github: '',
+      live: null,
+      hasLiveDemo: false
+    },
+    {
+      title: 'Book Share System',
+      description: 'A Book Share Application streamlining physical book sharing, charity donations, and book competitions among users.',
+      image: '../images/BookHive.png',
+      technologies: ['Spring Boot', 'React.js', 'PostgreSQL', 'Flutter'],
+      github: 'https://github.com/Benshekniel/BookHiveFrontend',
+      live: null,
+      hasLiveDemo: false
+    },
+    {
+      title: 'Chat Application',
+      description: 'An Android app enabling real-time QR code-based chat sessions with intuitive messaging and history preservation.',
+      image: '../images/chat.png',
+      technologies: ['Flutter', 'Firebase', 'SQLite', 'Cloudinary'],
+      github: 'https://github.com/Benshekniel/QRme',
+      live: null,
+      hasLiveDemo: false
+    },
+    {
+      title: 'A advitisement page',
       description: 'A comprehensive analytics dashboard with data visualization, reporting, and real-time metrics for business intelligence.',
-      image: 'https://images.pexels.com/photos/590020/pexels-photo-590020.jpg?auto=compress&cs=tinysrgb&w=600',
-      technologies: ['React', 'D3.js', 'Python', 'FastAPI'],
-      github: 'https://github.com',
-      live: 'https://demo.com',
+      image: '../images/alya.jpeg',
+      technologies: ['React', 'JavaScript', 'HTML', 'Tailwind CSS'],
+      github: 'https://github.com/Benshekniel/alya_app',
+      live: 'https://alyafoods.co.uk/',
       hasLiveDemo: true
     }
   ];
@@ -257,10 +257,11 @@ function App() {
             <div className="space-y-6 w-full">
               <h3 className="text-2xl font-semibold text-cyan-400">Hello! I'm Benshekniel</h3>
               <p className="text-slate-300 text-lg leading-relaxed">
-                I am a dedicated Computer Science graduate from the University of Colombo School of Computing, with a strong foundation in modern web technologies, Machine Learning, and Data Science. With over five years of experience as a full-stack developer, I specialize in crafting innovative digital solutions that transform complex challenges into seamless, user-focused experiences.
+                I am a driven Computer Science student at the University of Colombo School of Computing, deeply immersed in exploring diverse technological domains.
+                My passion lies in crafting impactful, efficient solutions by blending creativity with innovative problem-solving.
               </p>
               <p className="text-slate-300 text-lg leading-relaxed">
-                Passionate about writing clean, scalable code, I thrive in collaborative settings and am committed to delivering elegant, high-quality designs. I enjoy mentoring aspiring tech enthusiasts, contributing to open-source projects, and staying at the forefront of emerging technologies.
+                I thrive on mastering new frameworks, tools, and programming languages, staying ahead of the curve to deliver cutting-edge, user-focused designs.
               </p>
               <div className="flex flex-wrap gap-4 mt-6">
                 <span className="px-4 py-2 bg-slate-800 rounded-full text-cyan-400 text-sm">Problem Solver</span>
@@ -270,8 +271,8 @@ function App() {
             </div>
 
             <div className="relative flex justify-center md:justify-end pr-4">
-              <div className="aspect-square bg-gradient-to-br from-cyan-400/20 to-blue-600/20 rounded-2xl p-8 backdrop-blur-sm border border-slate-700 flex items-center justify-center w-80">
-                <img src="../images/profile.png" width={300} />
+              <div className="aspect-square bg-gradient-to-br from-cyan-400/20 to-blue-600/20 rounded-2xl p-8 pr-4 pl-4 backdrop-blur-sm border border-slate-700 flex items-center justify-center w-80">
+                <img src="../images/profile.jpg" width={200} height={600} alt="Profile" />
               </div>
               <div className="absolute -top-4 -right-4 w-24 h-24 bg-gradient-to-r from-cyan-400 to-blue-600 rounded-full opacity-20 blur-xl"></div>
               <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-gradient-to-r from-purple-400 to-pink-600 rounded-full opacity-20 blur-xl"></div>
