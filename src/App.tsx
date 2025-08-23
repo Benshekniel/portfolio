@@ -55,41 +55,41 @@ function App() {
   };
 
   const technologies = [
-    { name: 'React', image: '../icons/React-Light.svg' },
-    { name: 'Tailwind CSS', image: '../icons/TailwindCSS-Light.svg' },
-    { name: 'Node.js', image: '../icons/NodeJS-Light.svg' },
-    { name: 'Python', image: '../icons/Python-Light.svg' },
-    { name: 'PostgreSQL', image: '../icons/PostgreSQL-Light.svg' },
-    { name: 'Express.js', image: '../icons/ExpressJS-Light.svg' },
-    { name: 'PHP', image: '../icons/PHP-Light.svg' },
-    { name: 'MongoDB', image: '../icons/MongoDB.svg' },
-    { name: 'Linux', image: '../icons/Linux-Light.svg' },
-    { name: 'Git', image: '../icons/Git.svg' },
-    { name: 'Docker', image: '../icons/Docker.svg' },
-    { name: 'AWS', image: '../icons/AWS-Light.svg' },
-    { name: 'JavaScript', image: '../icons/JavaScript.svg' },
-    { name: 'HTML5', image: '../icons/HTML.svg' },
-    { name: 'CSS3', image: '../icons/CSS.svg' },
-    { name: 'C', image: '../icons/C.svg' },
-    { name: 'C++', image: '../icons/CPP.svg' },
-    { name: 'Scala', image: '../icons/Scala-Light.svg' },
-    { name: 'Kotlin', image: '../icons/Kotlin-Light.svg' },
-    { name: 'MySQL', image: '../icons/MySQL-Light.svg' },
-    { name: 'Spring Boot', image: '../icons/Spring-Light.svg' },
-    { name: 'Postman', image: '../icons/Postman.svg' },
-    { name: 'Flutter', image: '../icons/Flutter-Light.svg' },
-    { name: 'Firebase', image: '../icons/Firebase-Light.svg' },
-    { name: 'Supabase', image: '../icons/Supabase-Light.svg' },
-    { name: 'Three.js', image: '../icons/ThreeJS-Light.svg' },
-    { name: 'Figma', image: '../icons/Figma-Light.svg' },
-    { name: 'GitHub', image: '../icons/Github-Light.svg' },
+    { name: 'React', image: '../portfolio/icons/React-Light.svg' },
+    { name: 'Tailwind CSS', image: '../portfolio/icons/TailwindCSS-Light.svg' },
+    { name: 'Node.js', image: '../portfolio/icons/NodeJS-Light.svg' },
+    { name: 'Python', image: '../portfolio/icons/Python-Light.svg' },
+    { name: 'PostgreSQL', image: '../portfolio/icons/PostgreSQL-Light.svg' },
+    { name: 'Express.js', image: '../portfolio/icons/ExpressJS-Light.svg' },
+    { name: 'PHP', image: '../portfolio/icons/PHP-Light.svg' },
+    { name: 'MongoDB', image: '../portfolio/icons/MongoDB.svg' },
+    { name: 'Linux', image: '../portfolio/icons/Linux-Light.svg' },
+    { name: 'Git', image: '../portfolio/icons/Git.svg' },
+    { name: 'Docker', image: '../portfolio/icons/Docker.svg' },
+    { name: 'AWS', image: '../portfolio/icons/AWS-Light.svg' },
+    { name: 'JavaScript', image: '../portfolio/icons/JavaScript.svg' },
+    { name: 'HTML5', image: '../portfolio/icons/HTML.svg' },
+    { name: 'CSS3', image: '../portfolio/icons/CSS.svg' },
+    { name: 'C', image: '../portfolio/icons/C.svg' },
+    { name: 'C++', image: '../portfolio/icons/CPP.svg' },
+    { name: 'Scala', image: '../portfolio/icons/Scala-Light.svg' },
+    { name: 'Kotlin', image: '../portfolio/icons/Kotlin-Light.svg' },
+    { name: 'MySQL', image: '../portfolio/icons/MySQL-Light.svg' },
+    { name: 'Spring Boot', image: '../portfolio/icons/Spring-Light.svg' },
+    { name: 'Postman', image: '../portfolio/icons/Postman.svg' },
+    { name: 'Flutter', image: '../portfolio/icons/Flutter-Light.svg' },
+    { name: 'Firebase', image: '../portfolio/icons/Firebase-Light.svg' },
+    { name: 'Supabase', image: '../portfolio/icons/Supabase-Light.svg' },
+    { name: 'Three.js', image: '../portfolio/icons/ThreeJS-Light.svg' },
+    { name: 'Figma', image: '../portfolio/icons/Figma-Light.svg' },
+    { name: 'GitHub', image: '../portfolio/icons/Github-Light.svg' },
   ];
 
   const projects = [
     {
       title: 'Patient Care System',
       description: 'Web platform revolutionizing patient care with digital records, automated scheduling, secure messaging, real-time notifications.',
-      image: '../images/wellbe.png',
+      image: '../portfolio/images/wellbe.png',
       technologies: ['PHP', 'MySQL', 'JavaScript', 'Html', 'CSS'],
       github: 'https://github.com/himeshdharmawansha/WellBe',
       live: null,
@@ -98,7 +98,7 @@ function App() {
     {
       title: 'Library Management System',
       description: 'A library platform streamlining book borrowing, searching, and management with dynamic, user-friendly features.',
-      image: '../images/libo.png',
+      image: '../portfolio/images/libo.png',
       technologies: ['React', 'MongoDB', 'Node.js', 'Express.js'],
       github: 'https://github.com/Benshekniel/RAD_LIBO.git',
       live: null,
@@ -107,7 +107,7 @@ function App() {
     {
       title: 'Smart Waste Bin Monitoring System',
       description: 'A Smart Waste Bin Monitoring system using ESP32 and Arduino for real-time fill level and lid status tracking.',
-      image: '../images/SmartBin.webp',
+      image: '../portfolio/images/SmartBin.webp',
       technologies: ['ESP32', 'Arduino Uno', 'MQTT', 'Arduino IDE'],
       github: '',
       live: null,
@@ -116,7 +116,7 @@ function App() {
     {
       title: 'Book Share System',
       description: 'A Book Share Application streamlining physical book sharing, charity donations, and book competitions among users.',
-      image: '../images/BookHive.png',
+      image: '../portfolio/images/BookHive.png',
       technologies: ['Spring Boot', 'React.js', 'PostgreSQL', 'Flutter'],
       github: 'https://github.com/Benshekniel/BookHiveFrontend',
       live: null,
@@ -125,7 +125,7 @@ function App() {
     {
       title: 'Chat Application',
       description: 'An Android app enabling real-time QR code-based chat sessions with intuitive messaging and history preservation.',
-      image: '../images/chat.png',
+      image: '../portfolio/images/chat.png',
       technologies: ['Flutter', 'Firebase', 'SQLite', 'Cloudinary'],
       github: 'https://github.com/Benshekniel/QRme',
       live: null,
@@ -134,7 +134,7 @@ function App() {
     {
       title: 'A advitisement page',
       description: 'A comprehensive analytics dashboard with data visualization, reporting, and real-time metrics for business intelligence.',
-      image: '../images/alya.jpeg',
+      image: '../portfolio/images/alya.jpeg',
       technologies: ['React', 'JavaScript', 'HTML', 'Tailwind CSS'],
       github: 'https://github.com/Benshekniel/alya_app',
       live: 'https://alyafoods.co.uk/',
@@ -272,7 +272,7 @@ function App() {
 
             <div className="relative flex justify-center md:justify-end pr-4">
               <div className="aspect-square bg-gradient-to-br from-cyan-400/20 to-blue-600/20 rounded-2xl p-8 pr-4 pl-4 backdrop-blur-sm border border-slate-700 flex items-center justify-center w-80">
-                <img src="../images/profile.jpg" width={200} height={600} alt="Profile" />
+                <img src="../portfolio/images/profile.jpg" width={200} height={600} alt="Profile" />
               </div>
               <div className="absolute -top-4 -right-4 w-24 h-24 bg-gradient-to-r from-cyan-400 to-blue-600 rounded-full opacity-20 blur-xl"></div>
               <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-gradient-to-r from-purple-400 to-pink-600 rounded-full opacity-20 blur-xl"></div>
