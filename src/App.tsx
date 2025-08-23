@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import { 
-  Code, 
-  User, 
-  Briefcase, 
-  Mail, 
-  Github, 
-  Linkedin, 
+import {
+  Code,
+  User,
+  Briefcase,
+  Mail,
+  Github,
+  Linkedin,
   MessageCircle,
   ExternalLink,
   ChevronDown,
@@ -55,25 +55,64 @@ function App() {
   };
 
   const technologies = [
-    { name: 'React', image: '/images/react.png' },
-    { name: 'TypeScript', image: '/images/typescript.png' },
-    { name: 'Node.js', image: '/images/nodejs.png' },
-    { name: 'Python', image: '/images/python.png' },
-    { name: 'PostgreSQL', image: '/images/postgresql.png' },
-    { name: 'Next.js', image: '/images/nextjs.png' },
-    { name: 'Tailwind CSS', image: '/images/tailwind.png' },
-    { name: 'MongoDB', image: '/images/mongodb.png' },
-    { name: 'Express.js', image: '/images/express.png' },
-    { name: 'Git', image: '/images/git.png' },
-    { name: 'Docker', image: '/images/docker.png' },
-    { name: 'AWS', image: '/images/aws.png' },
-    { name: 'JavaScript', image: '/images/javascript.png' },
-    { name: 'HTML5', image: '/images/html5.png' },
-    { name: 'CSS3', image: '/images/css3.png' },
-    { name: 'GraphQL', image: '/images/graphql.png' },
+    { name: 'React', image: '../icons/React-Light.svg' },
+    { name: 'Tailwind CSS', image: '../icons/TailwindCSS-Light.svg' },
+    { name: 'Node.js', image: '../icons/NodeJS-Light.svg' },
+    { name: 'Python', image: '../icons/Python-Light.svg' },
+    { name: 'PostgreSQL', image: '../icons/PostgreSQL-Light.svg' },
+    { name: 'Express.js', image: '../icons/ExpressJS-Light.svg' },
+    { name: 'PHP', image: '../icons/PHP-Light.svg' },
+    { name: 'MongoDB', image: '../icons/mongoDB.svg' },
+    { name: 'Linux', image: '../icons/Linux-Light.svg' },
+    { name: 'Git', image: '../icons/Git.svg' },
+    { name: 'Docker', image: '../icons/Docker.svg' },
+    { name: 'AWS', image: '../icons/AWS-Light.svg' },
+    { name: 'JavaScript', image: '../icons/JavaScript.svg' },
+    { name: 'HTML5', image: '../icons/HTML.svg' },
+    { name: 'CSS3', image: '../icons/CSS.svg' },
+    { name: 'C', image: '../icons/C.svg' },
+    { name: 'C++', image: '../icons/CPP.svg' },
+    { name: 'Scala', image: '../icons/Scala-Light.svg' },
+    { name: 'Kotlin', image: '../icons/Kotlin-Light.svg' },
+    { name: 'MySQL', image: '../icons/MySQL-Light.svg' },
+    { name: 'Spring Boot', image: '../icons/Spring-Light.svg' },
+    { name: 'Postman', image: '../icons/Postman.svg' },
+    { name: 'Flutter', image: '../icons/Flutter-Light.svg' },
+    { name: 'Firebase', image: '../icons/Firebase-Light.svg' },
+    { name: 'Supabase', image: '../icons/Supabase-Light.svg' },
+    { name: 'Three.js', image: '../icons/ThreeJS-Light.svg' },
+    { name: 'Figma', image: '../icons/Figma-Light.svg' },
+    { name: 'GitHub', image: '../icons/Github-Light.svg' },
   ];
 
   const projects = [
+    {
+      title: 'E-Commerce Platform',
+      description: 'A full-stack e-commerce solution with React, Node.js, and PostgreSQL featuring payment integration, inventory management, and admin dashboard.',
+      image: 'https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=600',
+      technologies: ['React', 'Node.js', 'PostgreSQL', 'Stripe'],
+      github: 'https://github.com',
+      live: 'https://demo.com',
+      hasLiveDemo: true
+    },
+    {
+      title: 'Task Management App',
+      description: 'A collaborative task management application with real-time updates, file sharing, and team collaboration features.',
+      image: 'https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=600',
+      technologies: ['React', 'Firebase', 'Material-UI'],
+      github: 'https://github.com',
+      live: null,
+      hasLiveDemo: false
+    },
+    {
+      title: 'Analytics Dashboard',
+      description: 'A comprehensive analytics dashboard with data visualization, reporting, and real-time metrics for business intelligence.',
+      image: 'https://images.pexels.com/photos/590020/pexels-photo-590020.jpg?auto=compress&cs=tinysrgb&w=600',
+      technologies: ['React', 'D3.js', 'Python', 'FastAPI'],
+      github: 'https://github.com',
+      live: 'https://demo.com',
+      hasLiveDemo: true
+    },
     {
       title: 'E-Commerce Platform',
       description: 'A full-stack e-commerce solution with React, Node.js, and PostgreSQL featuring payment integration, inventory management, and admin dashboard.',
@@ -115,7 +154,7 @@ function App() {
                 Portfolio
               </span>
             </div>
-            
+
             {/* Desktop Navigation */}
             <div className="hidden md:block">
               <div className="flex items-center space-x-8">
@@ -123,11 +162,10 @@ function App() {
                   <button
                     key={item}
                     onClick={() => scrollToSection(item.toLowerCase())}
-                    className={`px-3 py-2 text-sm font-medium transition-colors duration-200 ${
-                      activeSection === item.toLowerCase()
-                        ? 'text-cyan-400 border-b-2 border-cyan-400'
-                        : 'text-slate-300 hover:text-white'
-                    }`}
+                    className={`px-3 py-2 text-sm font-medium transition-colors duration-200 ${activeSection === item.toLowerCase()
+                      ? 'text-cyan-400 border-b-2 border-cyan-400'
+                      : 'text-slate-300 hover:text-white'
+                      }`}
                   >
                     {item}
                   </button>
@@ -169,7 +207,7 @@ function App() {
       <section id="hero" className="min-h-screen flex items-center justify-center relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-slate-950 to-blue-950"></div>
         <div className="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg width=%2260%22 height=%2260%22 viewBox=%220 0 60 60%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cg fill=%22none%22 fill-rule=%22evenodd%22%3E%3Cg fill=%22%23334155%22 fill-opacity=%220.1%22%3E%3Ccircle cx=%2230%22 cy=%2230%22 r=%222%22/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')]"></div>
-        
+
         <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
           <div className="animate-fade-in-up">
             <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold mb-6">
@@ -208,27 +246,21 @@ function App() {
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-20 px-4 sm:px-6 lg:px-8">
+      <section id="about" className="py-20 px-4 sm:px-8 lg:px-6">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl font-bold mb-4">
-              About Me
-            </h2>
+          <div className="text-center mb-8">
+            <h2 className="text-3xl sm:text-4xl font-bold mb-4">About Me</h2>
             <div className="w-20 h-1 bg-gradient-to-r from-cyan-400 to-blue-400 mx-auto"></div>
           </div>
-          
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="space-y-6">
+
+          <div className="grid md:grid-cols-[4fr_1fr] gap-20 items-center">
+            <div className="space-y-6 w-full">
               <h3 className="text-2xl font-semibold text-cyan-400">Hello! I'm Benshekniel</h3>
               <p className="text-slate-300 text-lg leading-relaxed">
-                I am a dedicated Computer Science graduate from the University of Colombo School of Computing, with a strong foundation in modern web technologies, Machine Learning, and Data Science. 
-                With over five years of experience as a full-stack developer, I specialize in crafting innovative digital solutions that transform complex challenges into seamless, user-focused experiences.
-
+                I am a dedicated Computer Science graduate from the University of Colombo School of Computing, with a strong foundation in modern web technologies, Machine Learning, and Data Science. With over five years of experience as a full-stack developer, I specialize in crafting innovative digital solutions that transform complex challenges into seamless, user-focused experiences.
               </p>
               <p className="text-slate-300 text-lg leading-relaxed">
-                My Passionate about writing clean, scalable code, I thrive in collaborative settings and am committed to delivering elegant, high-quality designs.
-                Outside of development, I actively contribute to open-source projects, mentor aspiring tech enthusiasts, and stay at the forefront of emerging technologies. 
-                I’m driven by a love for problem-solving and a desire to create impactful solutions that resonate with users and communities alike.
+                Passionate about writing clean, scalable code, I thrive in collaborative settings and am committed to delivering elegant, high-quality designs. I enjoy mentoring aspiring tech enthusiasts, contributing to open-source projects, and staying at the forefront of emerging technologies.
               </p>
               <div className="flex flex-wrap gap-4 mt-6">
                 <span className="px-4 py-2 bg-slate-800 rounded-full text-cyan-400 text-sm">Problem Solver</span>
@@ -236,12 +268,10 @@ function App() {
                 <span className="px-4 py-2 bg-slate-800 rounded-full text-cyan-400 text-sm">Team Player</span>
               </div>
             </div>
-            
-            <div className="relative">
-              <div className="aspect-square bg-gradient-to-br from-cyan-400/20 to-blue-600/20 rounded-2xl p-8 backdrop-blur-sm border border-slate-700">
-                <div className="h-full bg-gradient-to-br from-slate-800 to-slate-900 rounded-xl flex items-center justify-center">
-                  <Code className="h-24 w-24 text-cyan-400" />
-                </div>
+
+            <div className="relative flex justify-center md:justify-end pr-4">
+              <div className="aspect-square bg-gradient-to-br from-cyan-400/20 to-blue-600/20 rounded-2xl p-8 backdrop-blur-sm border border-slate-700 flex items-center justify-center w-80">
+                <img src="../images/profile.png" width={300} />
               </div>
               <div className="absolute -top-4 -right-4 w-24 h-24 bg-gradient-to-r from-cyan-400 to-blue-600 rounded-full opacity-20 blur-xl"></div>
               <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-gradient-to-r from-purple-400 to-pink-600 rounded-full opacity-20 blur-xl"></div>
@@ -249,6 +279,8 @@ function App() {
           </div>
         </div>
       </section>
+
+
 
       {/* Technologies Section */}
       <section id="technologies" className="py-20 px-4 sm:px-6 lg:px-8 bg-slate-900/50">
@@ -259,7 +291,7 @@ function App() {
             </h2>
             <div className="w-20 h-1 bg-gradient-to-r from-cyan-400 to-blue-400 mx-auto"></div>
           </div>
-          
+
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-8 gap-6">
             {technologies.map((tech, index) => (
               <div
@@ -268,8 +300,8 @@ function App() {
                 style={{ animationDelay: `${index * 100}ms` }}
               >
                 <div className="w-12 h-12 mb-3 group-hover:scale-110 transition-transform duration-200 flex items-center justify-center">
-                  <img 
-                    src={tech.image} 
+                  <img
+                    src={tech.image}
                     alt={tech.name}
                     className="w-full h-full object-contain"
                     onError={(e) => {
@@ -296,7 +328,7 @@ function App() {
             </h2>
             <div className="w-20 h-1 bg-gradient-to-r from-cyan-400 to-blue-400 mx-auto"></div>
           </div>
-          
+
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {projects.map((project, index) => (
               <div
@@ -312,11 +344,11 @@ function App() {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 to-transparent"></div>
                 </div>
-                
+
                 <div className="p-6">
                   <h3 className="text-xl font-semibold text-white mb-2">{project.title}</h3>
                   <p className="text-slate-300 mb-4 line-clamp-3">{project.description}</p>
-                  
+
                   <div className="flex flex-wrap gap-2 mb-4">
                     {project.technologies.map((tech) => (
                       <span
@@ -327,7 +359,7 @@ function App() {
                       </span>
                     ))}
                   </div>
-                  
+
                   <div className="flex gap-3">
                     <a
                       href={project.github}
@@ -340,7 +372,7 @@ function App() {
                     </a>
                     {project.hasLiveDemo && (
                       <a
-                        href={project.live?? ''}
+                        href={project.live ?? ''}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white rounded-lg transition-all duration-200 text-sm"
@@ -366,23 +398,25 @@ function App() {
             </h2>
             <div className="w-20 h-1 bg-gradient-to-r from-cyan-400 to-blue-400 mx-auto"></div>
           </div>
-          
+
           <div className="max-w-4xl mx-auto text-center">
             <p className="text-xl text-slate-300 mb-8">
-              I'm always interested in new opportunities and exciting projects. 
+              I'm always interested in new opportunities and exciting projects.
               Let's discuss how we can bring your ideas to life!
             </p>
-            
+
             <div className="grid md:grid-cols-4 gap-6 mb-12">
               <a
-                href="mailto:alex@example.com"
+                href="mailto:benshekniel@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="bg-slate-800/50 backdrop-blur-sm border border-slate-700 rounded-xl p-6 hover:bg-slate-800/70 transition-all duration-300 transform hover:scale-105 hover:shadow-xl group"
               >
                 <Mail className="h-8 w-8 text-cyan-400 mx-auto mb-4 group-hover:scale-110 transition-transform duration-200" />
                 <h3 className="text-lg font-semibold text-white mb-2">Email</h3>
                 <p className="text-slate-300">benshekniel@gmail.com</p>
               </a>
-              
+
               <a
                 href="https://wa.me/+94763263712"
                 target="_blank"
@@ -393,7 +427,7 @@ function App() {
                 <h3 className="text-lg font-semibold text-white mb-2">WhatsApp</h3>
                 <p className="text-slate-300">Message me</p>
               </a>
-              
+
               <a
                 href="https://linkedin.com/in/benshekniel"
                 target="_blank"
@@ -404,7 +438,7 @@ function App() {
                 <h3 className="text-lg font-semibold text-white mb-2">LinkedIn</h3>
                 <p className="text-slate-300">Connect with me</p>
               </a>
-              
+
               <a
                 href="https://github.com/benshekniel"
                 target="_blank"
@@ -416,10 +450,10 @@ function App() {
                 <p className="text-slate-300">View my code</p>
               </a>
             </div>
-            
+
             <div className="text-center">
               <a
-                href="mailto:alex@example.com"
+                href="mailto:benshekniel@gmail.com"
                 className="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white font-semibold rounded-lg transition-all duration-200 transform hover:scale-105 shadow-lg hover:shadow-xl text-lg"
               >
                 <Mail className="h-5 w-5" />
