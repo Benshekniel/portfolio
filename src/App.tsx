@@ -133,7 +133,7 @@ function App() {
     },
     {
       title: 'A advitisement page',
-      description: 'A comprehensive analytics dashboard with data visualization, reporting, and real-time metrics for business intelligence.',
+      description: 'A static advertising page for Vindaya Enterprise UK Ltd.’s Alya Foods, promoting organic product effectively.',
       image: '../portfolio/images/alya.jpeg',
       technologies: ['React', 'JavaScript', 'HTML', 'Tailwind CSS'],
       github: 'https://github.com/Benshekniel/alya_app',
