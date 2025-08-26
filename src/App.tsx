@@ -11,8 +11,9 @@ import {
   ChevronDown,
   Menu,
   X,
-  ArrowUp
+  ArrowUp,
 } from 'lucide-react';
+import { FaMedium } from 'react-icons/fa'; // Font Awesome Medium icon
 
 function App() {
   const [activeSection, setActiveSection] = useState('hero');
@@ -83,6 +84,11 @@ function App() {
     { name: 'Three.js', image: '../portfolio/icons/ThreeJS-Light.svg' },
     { name: 'Figma', image: '../portfolio/icons/Figma-Light.svg' },
     { name: 'GitHub', image: '../portfolio/icons/Github-Light.svg' },
+    { name: 'Next.js', image: '../portfolio/icons/NextJS-Light.svg' },
+    { name: 'Java', image: '../portfolio/icons/Java-Light.svg' },
+    { name: 'RabbitMQ', image: '../portfolio/icons/RabbitMQ-Light.svg' },
+    { name: 'TypeScript', image: '../portfolio/icons/TypeScript.svg' },
+
   ];
 
   const projects = [
@@ -132,7 +138,7 @@ function App() {
       hasLiveDemo: false
     },
     {
-      title: 'A advitisement page',
+      title: 'A advertisement page',
       description: 'A static advertising page for Vindaya Enterprise UK Ltd.’s Alya Foods, promoting organic product effectively.',
       image: '../portfolio/images/alya.jpeg',
       technologies: ['React', 'JavaScript', 'HTML', 'Tailwind CSS'],
@@ -155,7 +161,6 @@ function App() {
               </span>
             </div>
 
-            {/* Desktop Navigation */}
             <div className="hidden md:block">
               <div className="flex items-center space-x-8">
                 {['About', 'Technologies', 'Projects', 'Contact'].map((item) => (
@@ -173,7 +178,6 @@ function App() {
               </div>
             </div>
 
-            {/* Mobile menu button */}
             <div className="md:hidden">
               <button
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -185,7 +189,6 @@ function App() {
           </div>
         </div>
 
-        {/* Mobile Navigation */}
         {isMenuOpen && (
           <div className="md:hidden bg-slate-900/95 backdrop-blur-md border-t border-slate-800">
             <div className="px-2 pt-2 pb-3 space-y-1">
@@ -281,8 +284,6 @@ function App() {
         </div>
       </section>
 
-
-
       {/* Technologies Section */}
       <section id="technologies" className="py-20 px-4 sm:px-6 lg:px-8 bg-slate-900/50">
         <div className="max-w-7xl mx-auto">
@@ -306,7 +307,6 @@ function App() {
                     alt={tech.name}
                     className="w-full h-full object-contain"
                     onError={(e) => {
-                      // Fallback to a placeholder if image fails to load
                       e.currentTarget.src = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDgiIGhlaWdodD0iNDgiIHZpZXdCb3g9IjAgMCA0OCA0OCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjQ4IiBoZWlnaHQ9IjQ4IiByeD0iOCIgZmlsbD0iIzMzNDE1NSIvPgo8dGV4dCB4PSIyNCIgeT0iMjgiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMiIgZmlsbD0iIzA2YjZkNCIgdGV4dC1hbmNob3I9Im1pZGRsZSI+VEVDSDwvdGV4dD4KPHN2Zz4K';
                     }}
                   />
@@ -392,7 +392,7 @@ function App() {
 
       {/* Contact Section */}
       <section id="contact" className="py-20 px-4 sm:px-6 lg:px-8 bg-slate-900/50">
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-6xl mx-auto"> {/* Increased to max-w-6xl */}
           <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl font-bold mb-4">
               Let's Work Together
@@ -400,55 +400,66 @@ function App() {
             <div className="w-20 h-1 bg-gradient-to-r from-cyan-400 to-blue-400 mx-auto"></div>
           </div>
 
-          <div className="max-w-4xl mx-auto text-center">
+          <div className="max-w-6xl mx-auto text-center"> {/* Increased to max-w-6xl */}
             <p className="text-xl text-slate-300 mb-8">
               I'm always interested in new opportunities and exciting projects.
               Let's discuss how we can bring your ideas to life!
             </p>
 
-            <div className="grid md:grid-cols-4 gap-6 mb-12">
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4 mb-12">
               <a
                 href="mailto:benshekniel@gmail.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-slate-800/50 backdrop-blur-sm border border-slate-700 rounded-xl p-6 hover:bg-slate-800/70 transition-all duration-300 transform hover:scale-105 hover:shadow-xl group"
+                className="bg-slate-800/50 backdrop-blur-sm border border-slate-700 rounded-xl p-6 hover:bg-slate-800/70 transition-all duration-300 transform hover:scale-105 hover:shadow-xl group min-w-[160px]" // Increased to min-w-[160px]
               >
                 <Mail className="h-8 w-8 text-cyan-400 mx-auto mb-4 group-hover:scale-110 transition-transform duration-200" />
                 <h3 className="text-lg font-semibold text-white mb-2">Email</h3>
-                <p className="text-slate-300">benshekniel@gmail.com</p>
+                <p className="text-slate-300 text-sm break-words">benshekniel@gmail.com</p>
               </a>
 
               <a
                 href="https://wa.me/+94763263712"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-slate-800/50 backdrop-blur-sm border border-slate-700 rounded-xl p-6 hover:bg-slate-800/70 transition-all duration-300 transform hover:scale-105 hover:shadow-xl group"
+                className="bg-slate-800/50 backdrop-blur-sm border border-slate-700 rounded-xl p-6 hover:bg-slate-800/70 transition-all duration-300 transform hover:scale-105 hover:shadow-xl group min-w-[160px]" // Increased to min-w-[160px]
               >
                 <MessageCircle className="h-8 w-8 text-cyan-400 mx-auto mb-4 group-hover:scale-110 transition-transform duration-200" />
                 <h3 className="text-lg font-semibold text-white mb-2">WhatsApp</h3>
-                <p className="text-slate-300">Message me</p>
+                <p className="text-slate-300 text-sm">Message me</p>
               </a>
 
               <a
                 href="https://linkedin.com/in/benshekniel"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-slate-800/50 backdrop-blur-sm border border-slate-700 rounded-xl p-6 hover:bg-slate-800/70 transition-all duration-300 transform hover:scale-105 hover:shadow-xl group"
+                className="bg-slate-800/50 backdrop-blur-sm border border-slate-700 rounded-xl p-6 hover:bg-slate-800/70 transition-all duration-300 transform hover:scale-105 hover:shadow-xl group min-w-[160px]" // Increased to min-w-[160px]
               >
                 <Linkedin className="h-8 w-8 text-cyan-400 mx-auto mb-4 group-hover:scale-110 transition-transform duration-200" />
                 <h3 className="text-lg font-semibold text-white mb-2">LinkedIn</h3>
-                <p className="text-slate-300">Connect with me</p>
+                <p className="text-slate-300 text-sm">Connect with me</p>
               </a>
 
               <a
                 href="https://github.com/benshekniel"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-slate-800/50 backdrop-blur-sm border border-slate-700 rounded-xl p-6 hover:bg-slate-800/70 transition-all duration-300 transform hover:scale-105 hover:shadow-xl group"
+                className="bg-slate-800/50 backdrop-blur-sm border border-slate-700 rounded-xl p-6 hover:bg-slate-800/70 transition-all duration-300 transform hover:scale-105 hover:shadow-xl group min-w-[160px]" // Increased to min-w-[160px]
               >
                 <Github className="h-8 w-8 text-cyan-400 mx-auto mb-4 group-hover:scale-110 transition-transform duration-200" />
                 <h3 className="text-lg font-semibold text-white mb-2">GitHub</h3>
-                <p className="text-slate-300">View my code</p>
+                <p className="text-slate-300 text-sm">View my code</p>
+              </a>
+
+              <a
+                href="https://medium.com/@benshekniel"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-slate-800/50 backdrop-blur-sm border border-slate-700 rounded-xl p-6 hover:bg-slate-800/70 transition-all duration-300 transform hover:scale-105 hover:shadow-xl group min-w-[160px]" // Increased to min-w-[160px]
+              >
+                <FaMedium className="h-8 w-8 text-cyan-400 mx-auto mb-4 group-hover:scale-110 transition-transform duration-200" />
+                <h3 className="text-lg font-semibold text-white mb-2">Medium</h3>
+                <p className="text-slate-300 text-sm">Read my articles</p>
               </a>
             </div>
 
@@ -464,7 +475,6 @@ function App() {
           </div>
         </div>
       </section>
-
       {/* Footer */}
       <footer className="py-8 px-4 sm:px-6 lg:px-8 border-t border-slate-800">
         <div className="max-w-7xl mx-auto text-center">
