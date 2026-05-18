@@ -127,7 +127,7 @@ const contactItems = [
 ];
 
 const socialItems = [
-  { icon: "download", label: "Download CV", href: "/Resume.pdf" },
+  { icon: "download", label: "Download CV", href: "/portfolio/Resume.pdf" },
   { icon: "github", label: "GitHub", href: "https://github.com/benshekniel" },
   { icon: "linkedin", label: "LinkedIn", href: "https://linkedin.com/in/benshekniel" },
   { icon: "globe", label: "Medium", href: "https://medium.com/@benshekniel" },
@@ -199,7 +199,7 @@ export default function App() {
               practical software solutions.
             </p>
             <div className="hero-actions">
-              <a className="primary" href="/Resume.pdf" target="_blank" rel="noreferrer">
+              <a className="primary" href="/portfolio/Resume.pdf" target="_blank" rel="noreferrer">
                 <span
                   className="button-icon"
                   aria-hidden="true"
